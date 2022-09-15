@@ -1,7 +1,8 @@
-z=int(input())
-for i in range(1,z+1):
-    a=i
-    for j in range(1,z+2-i):
-        print(a,end=" ")
-        a+=1
+a=int(input())
+for i in range(1,a+1):
+    for j in range(1,a+1):
+        if i==j or (j==a+1-i):
+            print(a+1-i,end=" ")
+        else:
+            print(end=" ")
     print()
