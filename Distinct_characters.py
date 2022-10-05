@@ -1,9 +1,10 @@
-z=list(input().lower().split())
-h="".join(z)
+z=input()
+d="".join(z)
+b=set(d)
+c=[]
 op=""
-for i in h:
-    if h.count(i)==1:
-        op+=i
-k=sorted(op)
-l="".join(k)
-print(l)
+for i in b:
+    if i.islower():
+        c.append(i)
+e=sorted(c)
+print("".join(e))
