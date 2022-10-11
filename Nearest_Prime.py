@@ -9,7 +9,7 @@ for _ in range(int(input())):
         if len(b)==2:
             break
         n+=1
-    z=a
+    z=a-1
     while True:
         x=[]
         for i in range(1,z+1):
