@@ -1,32 +1,28 @@
-z=int(input())
-i=1
-k=2
-c=0
-a=0
-b=0
-for i in range(1,z+1):
-    m=int(input())
-    a=0
-    b=0
+for _ in range(int(input())):
+    a=int(input())
+    n=a
     while True:
-        a=b
-        while i<=k:
-            if k%i==0:
-                c+=1
-            i+=1
-        if c==2:
-            b=k
-        c=0
-        i=1
-        if b>m:
+        b=[]
+        for i in range(1,n+1):
+            if n%i==0:
+                b.append(i)
+        if len(b)==2:
             break
-        k+=1
-    k=1
-    x=abs(a-m)
-    y=abs(b-m)
-    if x<y:
-        print(a)
-    elif x>y:
-        print(b)
+        n+=1
+    z=a
+    while True:
+        x=[]
+        for i in range(1,z+1):
+            if z%i==0:
+                x.append(i)
+        if len(x)==2:
+            break
+        z-=1
+    y=a-z
+    x=n-a
+    if y<=x:
+        print(z)
     else:
-        print(a)
+        print(n)
+
+    
