@@ -1,22 +1,28 @@
-z=int(input())
-c=0
-i=2
-k=1
-a=2
+
+a=int(input())
+n=a
 while True:
-    b=a
-    while k<=i:
-        if i%k==0:
-            c+=1
-        k+=1
-    if c==2:
-        a=i
-    k=1
-    c=0
-    if a>=z:
+    b=[]
+    for i in range(1,n+1):
+        if n%i==0:
+            b.append(i)
+    if len(b)==2:
         break
-    i+=1
-s=abs(b-z)
-p=abs(a-z)
-print(min(s,p))
+    n+=1
+z=a
+while True:
+    x=[]
+    for i in range(1,z+1):
+        if z%i==0:
+            x.append(i)
+    if len(x)==2:
+        break
+    z-=1
+y=a-z
+x=n-a
+if y<=x:
+    print(y)
+else:
+    print(x)
+
     
