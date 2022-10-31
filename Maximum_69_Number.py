@@ -1,11 +1,12 @@
-z=int(input())
-s=str(z)
-f=True
-k=""
-for i in s:
-    if int(i)==6 and f==True:
-        k=k+"9"
-        f=False
+n=int(input())
+a=str(n)
+b=1
+c=""
+for i in a:
+    if i=="6" and b==1:
+        c+="9"
+        b=0
     else:
-        k=k+i
-print(int(k))
+        c+=i
+        
+print(c)
